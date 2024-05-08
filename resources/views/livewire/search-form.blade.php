@@ -1,4 +1,5 @@
 <div>
+    <br />
     <form wire:submit="npiPoll">
         <label for='first_name'>First Name</label>
         <input type='text' id='first_name' name='first_name' wire:model='FirstName' />
@@ -24,7 +25,7 @@
         <input type=submit class='formSubmit'></imput>
     </form>
 
-    <div style="color: white">
+    <div>
         @if(!empty($providers))
         <br />
            <label>Page {{ $pageOffset + 1 }}: {{ $resultCount }} results found</label>
